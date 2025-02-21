@@ -355,6 +355,68 @@
                 font-size: 2rem;
             }
         }
+
+        /* Additional Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 15px;
+            }
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .about-grid, .steps-grid, .roadmap-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 6rem 0 3rem;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .about-grid, .steps-grid, .roadmap-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .section {
+                padding: 3rem 0;
+            }
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-logo {
+                font-size: 1.5rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .about-card, .step-card, .roadmap-card {
+                padding: 1.5rem;
+            }
+            .token-supply {
+                font-size: 2rem;
+            }
+            .footer {
+                padding: 1.5rem 0;
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
